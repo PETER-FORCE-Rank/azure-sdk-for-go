@@ -1,6 +1,6 @@
 # Release History
 
-## 1.6.2-beta.1 (Unreleased)
+## 1.6.2-beta.2 (Unreleased)
 
 ### Features Added
 
@@ -9,6 +9,11 @@
 ### Bugs Fixed
 
 ### Other Changes
+
+## 1.6.2-beta.1 (2025-05-08)
+
+### Features Added
+* Add support for x-ms-file-request-intent header for blob copy APIs.
 
 ## 1.6.1 (2025-04-16)
 
