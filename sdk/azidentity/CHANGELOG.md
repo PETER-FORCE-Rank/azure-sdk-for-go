@@ -1,14 +1,16 @@
 # Release History
 
-## 1.9.1-beta.1 (Unreleased)
-
-### Features Added
-
-### Breaking Changes
+## 1.10.1 (2025-06-10)
 
 ### Bugs Fixed
+- `AzureCLICredential` and `AzureDeveloperCLICredential` could wait indefinitely for subprocess output
 
-### Other Changes
+## 1.10.0 (2025-05-14)
+
+### Features Added
+- `DefaultAzureCredential` reads environment variable `AZURE_TOKEN_CREDENTIALS` to enable a subset of its credentials:
+  - `dev` selects `AzureCLICredential` and `AzureDeveloperCLICredential`
+  - `prod` selects `EnvironmentCredential`, `WorkloadIdentityCredential` and `ManagedIdentityCredential`
 
 ## 1.9.0 (2025-04-08)
 
