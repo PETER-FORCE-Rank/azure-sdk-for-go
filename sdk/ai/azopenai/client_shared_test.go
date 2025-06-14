@@ -48,6 +48,7 @@ type testVars struct {
 	TextEmbedding3Small                   endpointWithModel
 	Vision                                endpointWithModel
 	Whisper                               endpointWithModel
+	Reasoning                             endpointWithModel
 }
 
 type endpointWithModel struct {
@@ -126,19 +127,19 @@ var azureOpenAI = func() testVars {
 			},
 			ChatCompletions: endpointWithModel{
 				Endpoint: servers.USEast,
-				Model:    "gpt-4-0613",
+				Model:    "gpt-4",
 			},
 			ChatCompletionsLegacyFunctions: endpointWithModel{
 				Endpoint: servers.USEast,
-				Model:    "gpt-4-0613",
+				Model:    "gpt-4",
 			},
 			ChatCompletionsOYD: endpointWithModel{
 				Endpoint: servers.USEast,
-				Model:    "gpt-4-0613",
+				Model:    "gpt-4",
 			},
 			ChatCompletionsRAI: endpointWithModel{
 				Endpoint: servers.USEast,
-				Model:    "gpt-4-0613",
+				Model:    "gpt-4",
 			},
 			ChatCompletionsWithJSONResponseFormat: endpointWithModel{
 				Endpoint: servers.SWECentral,
@@ -171,6 +172,10 @@ var azureOpenAI = func() testVars {
 			Whisper: endpointWithModel{
 				Endpoint: servers.USNorthCentral,
 				Model:    "whisper",
+			},
+			Reasoning: endpointWithModel{
+				Endpoint: servers.SWECentral,
+				Model:    "o3-2025-04-16",
 			},
 			Cognitive: azopenai.AzureSearchChatExtensionConfiguration{
 				Parameters: &azopenai.AzureSearchChatExtensionParameters{

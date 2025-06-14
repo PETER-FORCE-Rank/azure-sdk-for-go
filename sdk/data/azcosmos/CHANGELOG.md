@@ -1,12 +1,18 @@
 # Release History
 
-## 1.4.0 (Unreleased)
+## 1.4.1-beta.1 (Unreleased)
 
 ### Features Added
+
+* Added support for BypassIntegratedCache option See [PR 24772](https://github.com/Azure/azure-sdk-for-go/pull/24772)
 
 ### Breaking Changes
 
 ### Bugs Fixed
+
+### Other Changes
+
+## 1.4.0 (2025-04-29)
 
 ### Other Changes
 
